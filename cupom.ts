@@ -14,11 +14,19 @@ let dados = {
 };
 
 function imprime_dados_loja() {
-  // Implemente aqui
-  return "";
+
+  return `${dados.nome_loja}
+${dados.logradouro}, ${dados.numero} ${dados.complemento}
+${dados.bairro} - ${dados.municipio} - ${dados.estado}
+CEP:${dados.cep} Tel ${dados.telefone}
+${dados.observacao}
+CNPJ: ${dados.cnpj}
+IE: ${dados.inscricao_estadual}
+`;
 }
 
 module.exports = {
   dados: dados,
   imprime_dados_loja:  imprime_dados_loja
 };
+
